@@ -1,0 +1,289 @@
+.pv-all-products {
+    width: 100%;
+    background: #faf8f2;
+    padding: 60px 0;
+}
+
+.pv-products-container {
+    width: 88%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.pv-products-title {
+    text-align: center;
+    font-size: 2.1rem;
+    color: #234329;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    font-weight: 700;
+}
+
+.pv-product-row {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: #fff;
+    border-radius: 18px;
+    padding: 22px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 22px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.pv-product-row:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 35px rgba(0,0,0,.12);
+}
+
+.pv-product-left {
+    flex: 0 0 270px;
+}
+
+.pv-product-img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.pv-product-right {
+    flex: 1;
+}
+
+.pv-product-right h2 {
+    font-size: 1.45rem;
+    color: #234329;
+    margin-bottom: 12px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.pv-deal-tag {
+    display: inline-block;
+    background: #c62828;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: .8rem;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.pv-price-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.pv-original-price {
+    color: #777;
+    font-size: 1rem;
+    text-decoration: line-through;
+}
+
+.pv-current-price {
+    color: #2e7d32;
+    font-size: 1.55rem;
+    font-weight: 700;
+}
+
+.pv-short-desc {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.pv-full-desc {
+    font-size: .95rem;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+.pv-buy-btn {
+    display: inline-block;
+    text-decoration: none;
+    background: #4d8b4b;
+    color: #fff;
+    padding: 11px 24px;
+    border-radius: 30px;
+    transition: .3s;
+    font-weight: 600;
+    font-size: .95rem;
+}
+
+.pv-buy-btn:hover {
+    background: #2f5f34;
+}
+
+/* ========================= */
+/* Tablet */
+/* ========================= */
+
+@media (max-width:992px){
+
+    .pv-products-container{
+        width:92%;
+    }
+
+    .pv-products-title{
+        font-size:1.9rem;
+    }
+
+    .pv-product-row{
+        gap:22px;
+        padding:20px;
+    }
+
+    .pv-product-left{
+        flex:0 0 220px;
+    }
+
+    .pv-product-right h2{
+        font-size:1.25rem;
+    }
+
+    .pv-deal-tag{
+        font-size:.75rem;
+    }
+
+    .pv-current-price{
+        font-size:1.4rem;
+    }
+
+    .pv-original-price{
+        font-size:.95rem;
+    }
+
+    .pv-short-desc{
+        font-size:.95rem;
+    }
+
+    .pv-full-desc{
+        font-size:.9rem;
+    }
+
+}
+
+/* ========================= */
+/* Mobile */
+/* ========================= */
+
+@media (max-width:768px){
+
+    .pv-products-container{
+        width:94%;
+    }
+
+    .pv-products-title{
+        font-size:1.8rem;
+        margin-bottom:32px;
+    }
+
+    .pv-product-row{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:18px;
+        padding:18px;
+    }
+
+    .pv-product-left{
+        width:100%;
+        flex:unset;
+    }
+
+    .pv-product-img{
+        width:100%;
+        border-radius:10px;
+    }
+
+    .pv-product-right{
+        width:100%;
+    }
+
+    .pv-product-right h2{
+        font-size:1.15rem;
+        line-height:1.4;
+        margin-bottom:10px;
+    }
+
+    .pv-deal-tag{
+        font-size:.72rem;
+        padding:4px 10px;
+        margin-bottom:10px;
+    }
+
+    .pv-price-box{
+        gap:8px;
+        margin-bottom:10px;
+    }
+
+    .pv-original-price{
+        font-size:.9rem;
+    }
+
+    .pv-current-price{
+        font-size:1.35rem;
+    }
+
+    .pv-short-desc{
+        font-size:.92rem;
+        margin-bottom:8px;
+    }
+
+    .pv-full-desc{
+        font-size:.88rem;
+        line-height:1.6;
+        margin-bottom:18px;
+    }
+
+    .pv-buy-btn{
+        width:100%;
+        text-align:center;
+        padding:12px;
+    }
+
+}
+
+/* ========================= */
+/* Small Mobile */
+/* ========================= */
+
+@media (max-width:480px){
+
+    .pv-products-title{
+        font-size:1.6rem;
+    }
+
+    .pv-product-row{
+        padding:15px;
+    }
+
+    .pv-product-right h2{
+        font-size:1.05rem;
+    }
+
+    .pv-deal-tag{
+        font-size:.68rem;
+    }
+
+    .pv-current-price{
+        font-size:1.25rem;
+    }
+
+    .pv-original-price{
+        font-size:.85rem;
+    }
+
+    .pv-short-desc{
+        font-size:.88rem;
+    }
+
+    .pv-full-desc{
+        font-size:.84rem;
+    }
+
+}

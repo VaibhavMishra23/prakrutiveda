@@ -1,0 +1,172 @@
+.pv-products {
+    width: 100%;
+    padding: 80px 7%;
+    background: #faf8f2;
+    overflow: hidden;
+}
+
+.pv-products-heading {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #2d5134;
+    margin-bottom: 50px;
+}
+
+/* Swiper */
+
+.pv-products .swiper {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.pv-products .swiper-slide {
+    height: auto;
+    display: flex;
+}
+
+/* Card */
+
+.pv-product-card {
+    width: 100%;
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
+    transition: .35s;
+}
+
+.pv-product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .15);
+}
+
+/* Image */
+
+.pv-product-image-box {
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+}
+
+.pv-product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.pv-product-card:hover .pv-product-image {
+    transform: scale(1.08);
+}
+
+/* Content */
+
+.pv-product-content {
+    padding: 22px;
+    text-align: center;
+}
+
+.pv-product-content h3 {
+    font-size: 1.2rem;
+    color: #234329;
+    margin-bottom: 10px;
+}
+
+.pv-product-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.pv-view-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 30px;
+    background: #4d8b4b;
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.pv-view-btn:hover {
+    background: #2f5f34;
+}
+
+/* Tablet */
+
+@media (max-width: 992px) {
+
+    .pv-products {
+        padding: 70px 5%;
+    }
+
+    .pv-products-heading {
+        font-size: 1.7rem;
+    }
+
+    .pv-product-image-box {
+        height: 220px;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .pv-products {
+        padding: 55px 15px;
+    }
+
+    .pv-products-heading {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+
+    .pv-product-image-box {
+        height: 220px;
+    }
+
+    .pv-product-content {
+        padding: 18px;
+    }
+
+    .pv-product-content h3 {
+        font-size: 1rem;
+    }
+
+    .pv-product-content p {
+        font-size: .9rem;
+    }
+
+    .pv-view-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .pv-products .swiper {
+        padding-left: 10px;
+    }
+
+    .pv-product-card {
+        width: 97%;
+    }
+
+}
+@media (max-width: 480px) {
+
+    .pv-products {
+        padding: 45px 12px;
+    }
+
+    .pv-products-heading {
+        font-size: 1.3rem;
+    }
+
+    .pv-product-image-box {
+        height: 280px;
+    }
+
+}

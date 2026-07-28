@@ -1,0 +1,388 @@
+/* ===========================
+        GLOBAL
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/* ===========================
+        NAVBAR
+=========================== */
+
+.pv-navbar{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background:#fff;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+    z-index:999;
+}
+
+.pv-navbar-container{
+
+    max-width:1300px;
+    height:78px;
+
+    margin:auto;
+    padding:0 30px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+/* ===========================
+        LOGO
+=========================== */
+
+.pv-logo{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    text-decoration:none;
+
+}
+
+.pv-logo-img{
+
+    width:60px;
+    height:60px;
+    object-fit:contain;
+
+}
+
+.pv-logo span{
+
+    font-size:28px;
+    font-weight:700;
+    color:#1c6b36;
+
+}
+
+/* ===========================
+        DESKTOP MENU
+=========================== */
+
+.pv-nav-links{
+
+    display:flex;
+    list-style:none;
+    gap:35px;
+
+}
+
+.pv-nav-links a{
+
+    text-decoration:none;
+    color:#333;
+
+    font-size:17px;
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.pv-nav-links a:hover,
+.pv-nav-links a.active{
+
+    color:#2f8f46;
+
+}
+
+/* ===========================
+        MENU ICON
+=========================== */
+
+.pv-menu-icon{
+
+    display:none;
+
+    font-size:34px;
+    color:#2f8f46;
+
+    cursor:pointer;
+
+}
+
+/* ===========================
+        OVERLAY
+=========================== */
+
+.pv-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+    backdrop-filter:blur(3px);
+
+    z-index:998;
+
+}
+
+/* ===========================
+        MOBILE DRAWER
+=========================== */
+
+.pv-mobile-menu{
+
+    position:fixed;
+
+    top:0;
+    right:-100%;
+
+    width:310px;
+    height:100vh;
+
+    background:linear-gradient(180deg,#ffffff,#f4faf5);
+
+    padding:25px;
+
+    display:flex;
+    flex-direction:column;
+
+    transition:.35s ease;
+
+    box-shadow:-10px 0 35px rgba(0,0,0,.15);
+
+    z-index:999;
+
+}
+
+.pv-mobile-menu.active{
+
+    right:0;
+
+}
+
+/* ===========================
+        MOBILE HEADER
+=========================== */
+
+.pv-mobile-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+.pv-mobile-logo{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+}
+
+.pv-mobile-logo img{
+
+    width:55px;
+
+}
+
+.pv-mobile-logo span{
+
+    font-size:20px;
+    font-weight:700;
+    color:#2f8f46;
+
+}
+
+/* ===========================
+        CLOSE BUTTON
+=========================== */
+
+.pv-close{
+
+    width:42px;
+    height:42px;
+
+    border-radius:50%;
+
+    background:#eef9f0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:25px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.pv-close:hover{
+
+    background:#2f8f46;
+    color:white;
+
+    transform:rotate(90deg);
+
+}
+
+/* ===========================
+        MOBILE LINKS
+=========================== */
+
+.pv-mobile-menu a{
+
+    text-decoration:none;
+
+    color:#333;
+
+    font-size:18px;
+    font-weight:600;
+
+    padding:15px 18px;
+
+    border-radius:12px;
+
+    margin-bottom:8px;
+
+    transition:.3s;
+
+}
+
+.pv-mobile-menu a:hover,
+.pv-mobile-menu a.active{
+
+    background:#2f8f46;
+
+    color:white;
+
+    padding-left:30px;
+
+}
+
+/* ===========================
+        BOTTOM
+=========================== */
+
+.pv-mobile-bottom{
+
+    margin-top:auto;
+
+    border-top:1px solid #ddd;
+
+    padding-top:22px;
+
+}
+
+.pv-mobile-bottom p{
+
+    text-align:center;
+
+    color:#666;
+
+    font-size:14px;
+
+    margin-bottom:18px;
+
+}
+
+/* ===========================
+        SOCIAL BUTTONS
+=========================== */
+
+.pv-mobile-social{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.pv-mobile-social a{
+
+    text-align:center;
+
+    color:white !important;
+
+    padding:14px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+}
+
+.pv-mobile-social a:first-child{
+
+    background:#25D366;
+
+}
+
+.pv-mobile-social a:last-child{
+
+    background:#E1306C;
+
+}
+
+.pv-mobile-social a:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+    .pv-nav-links{
+
+        display:none;
+
+    }
+
+    .pv-menu-icon{
+
+        display:block;
+
+    }
+
+    .pv-logo span{
+
+        font-size:22px;
+
+    }
+
+    .pv-logo-img{
+
+        width:52px;
+        height:52px;
+
+    }
+
+}
+
+@media(max-width:400px){
+
+    .pv-mobile-menu{
+
+        width:100%;
+
+    }
+
+}

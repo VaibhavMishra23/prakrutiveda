@@ -1,0 +1,182 @@
+.contact{
+
+    width:100%;
+    min-height:100vh;
+
+    padding:120px 8% 80px;
+
+    background:#fafafa;
+
+}
+
+.contact-heading{
+
+    text-align:center;
+    margin-bottom:60px;
+
+}
+
+.contact-heading h1{
+
+    font-size:28px;
+    color:#222;
+    margin-bottom:15px;
+
+}
+
+.contact-heading p{
+
+    color:#666;
+    font-size:16px;
+
+}
+
+.contact-cards{
+
+    max-width:900px;
+    margin:auto;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:30px;
+
+}
+
+.contact-card{
+
+    background:white;
+
+    padding:30px 35px;
+
+    border-radius:22px;
+
+    display:flex;
+    align-items:center;
+
+    text-decoration:none;
+
+    color:#222;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+.contact-icon{
+
+    width:70px;
+    height:70px;
+
+    border-radius:18px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:30px;
+
+    color:white;
+
+    margin-right:25px;
+
+}
+
+.whatsapp{
+
+    background:#25D366;
+
+}
+
+.instagram{
+
+    background:linear-gradient(45deg,#F58529,#DD2A7B,#8134AF,#515BD4);
+
+}
+
+.email{
+
+    background:#2f8f46;
+
+}
+
+.contact-info{
+
+    flex:1;
+
+}
+
+.contact-info h2{
+
+    font-size:20px;
+    margin-bottom:8px;
+
+}
+
+.contact-info p{
+
+    color:#666;
+    font-size:16px;
+
+}
+
+.contact-card span{
+
+    font-size:24px;
+    color:#2f8f46;
+
+}
+
+@media(max-width:768px){
+
+    .contact{
+
+        padding:100px 5% 60px;
+
+    }
+
+    .contact-heading h1{
+
+        font-size:22px;
+
+    }
+
+    .contact-card{
+
+        padding:22px;
+
+    }
+
+    .contact-icon{
+
+        width:60px;
+        height:60px;
+
+        font-size:26px;
+
+        margin-right:18px;
+
+    }
+
+    .contact-info h2{
+
+        font-size:18px;
+
+    }
+
+    .contact-card span{
+
+        font-size:24px;
+
+    }
+
+}

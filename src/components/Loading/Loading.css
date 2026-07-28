@@ -1,0 +1,79 @@
+.pv-loader-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 999999;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.pv-loader-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: pvFadeUp 1s ease forwards;
+    padding: 0 1rem;
+}
+
+.pv-loader-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Full Logo */
+
+.pv-loader-letter {
+    width: clamp(220px, 35vw, 520px);
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+@keyframes pvFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+
+    .pv-loader-letter {
+        width: clamp(180px, 55vw, 320px);
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+
+    .pv-loader-letter {
+        width: 80%;
+        max-width: 280px;
+    }
+
+}
+
+/* Large Screens */
+
+@media (min-width: 1600px) {
+
+    .pv-loader-letter {
+        width: 520px;
+    }
+
+}
