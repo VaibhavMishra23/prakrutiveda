@@ -1,9 +1,11 @@
 import product1 from "../assets/Product1.png";
 import product1_1 from "../assets/Product1_1.png";
+import product1_2 from "../assets/Product1_2.jpeg";
 import product2 from "../assets/Product2.png";
 import product2_1 from "../assets/Product2_1.png";
 import product3 from "../assets/Product3.png";
 import product3_1 from "../assets/Product3_1.png";
+import product3_2 from "../assets/Product3_2.jpeg";
 
 const productData = [
   {
@@ -11,11 +13,11 @@ const productData = [
 
     name: "Prakruti Veda Herbal Shampoo",
 
-    image: product1,
+    image: product2,
 
     images: [
-      product1,
-      product1_1
+      product2,
+      product2_1
     ],
 
     price: "₹399",
@@ -80,11 +82,12 @@ const productData = [
 
     name: "Prakruti Veda Kesh Prakruti Hair Oil",
 
-    image: product2,
+    image: product3,
 
     images: [
-      product2,
-      product2_1
+      product3,
+      product3_1,
+      product3_2
     ],
 
     price: "₹799",
@@ -159,11 +162,12 @@ const productData = [
 
     name: "Prakruti Veda Swarnkanti Kumkumadi Face Oil",
 
-    image: product3,
+    image: product1,
 
     images: [
-      product3,
-      product3_1
+      product1,
+      product1_1,
+      product1_2
     ],
 
     price: "₹299",

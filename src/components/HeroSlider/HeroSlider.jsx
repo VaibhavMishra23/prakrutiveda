@@ -11,7 +11,7 @@ import slide1 from "../../assets/Slide1.png";
 import slide1_1 from "../../assets/Slide1_1.png";
 import slide2 from "../../assets/Slide2.jpeg";
 import slide2_1 from "../../assets/Slide2_1.jpeg";
-import slide3 from "../../assets/Slide3.png";
+import slide3 from "../../assets/Slide3.jpeg";
 import slide3_1 from "../../assets/Slide3_1.jpeg";
 
 function HeroSlider() {
