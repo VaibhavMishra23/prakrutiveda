@@ -6,6 +6,7 @@ import product2_1 from "../assets/Product2_1.png";
 import product3 from "../assets/Product3.png";
 import product3_1 from "../assets/Product3_1.png";
 import product3_2 from "../assets/Product3_2.jpeg";
+import product4 from "../assets/Product4.jpeg";
 
 const productData = [
   {
@@ -20,7 +21,7 @@ const productData = [
       product2_1
     ],
 
-    price: "₹399",
+    price: "₹499",
     originalPrice: "₹599",
 
     deal: "Limited Time Deal",
@@ -90,8 +91,8 @@ const productData = [
       product3_2
     ],
 
-    price: "₹799",
-    originalPrice: "₹999",
+    price: "₹399",
+    originalPrice: "₹499",
 
     deal: "Limited Time Deal",
 
@@ -170,8 +171,83 @@ const productData = [
       product1_2
     ],
 
-    price: "₹299",
-    originalPrice: "₹449",
+    price: "₹1400",
+    originalPrice: "₹1600",
+
+    deal: "Limited Time Deal",
+
+    shortDescription:
+      "Made with 27 Vital Herbs & Pure Saffron",
+
+    description:
+      "Premium Kumkumadi Face Oil enriched with Pure Saffron, Goat Milk and Ayurvedic herbs for naturally glowing skin.",
+
+    detailDescription: [
+      "Prakruti Veda Swarnakanti Kumkumadi Face Oil is a premium Ayurvedic facial oil prepared using approximately 25 carefully selected Ayurvedic herbs.",
+      "Enriched with Kashmiri Saffron, Manjistha, Licorice, Vetiver, Lodhra, Sandalwood and other traditional botanicals.",
+      "It helps nourish the skin, improve softness and supports a naturally radiant and healthy-looking complexion with regular use."
+    ],
+
+    benefits: [
+      "Made with approximately 25 Ayurvedic herbs",
+      "Helps nourish and moisturize the skin",
+      "Supports soft and smooth skin",
+      "Promotes a naturally radiant complexion",
+      "Suitable for daily skincare",
+      "Suitable for all skin types"
+    ],
+
+    ingredients: [
+      "Saffron",
+      "Dashmoola",
+      "Kamal Kesar",
+      "Manjistha",
+      "Mulethi",
+      "Rakt Chandan",
+      "Sandalwood",
+      "Lotus",
+      "Rose Petals",
+      "Orange Peel",
+      "Vetiver",
+      "Vacha",
+      "Lodhra",
+      "Other Ayurvedic Herbs"
+    ],
+
+    howToUse: [
+      "Cleanse your face thoroughly.",
+      "Apply 2–3 drops to the face and neck.",
+      "Massage gently in upward circular motions for 2–3 minutes.",
+      "Leave it on overnight.",
+      "Use daily for best results."
+    ],
+
+    reviews: [
+      {
+        name: "Sneha",
+        rating: 5,
+        comment: "Skin feels soft and glowing."
+      },
+      {
+        name: "Anjali",
+        rating: 5,
+        comment: "Very lightweight and effective."
+      }
+    ]
+  },{
+    id: 4,
+
+    name: "Prakruti Veda Swarnkanti Kumkumadi Face Oil 10ml",
+
+    image: product4,
+
+    images: [
+      product4,
+      product1_1,
+    ],
+
+    price: "₹499",
+    originalPrice: "₹699",
 
     deal: "Limited Time Deal",
 
