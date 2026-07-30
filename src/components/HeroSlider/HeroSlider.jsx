@@ -13,6 +13,8 @@ import slide2 from "../../assets/Slide2.jpeg";
 import slide2_1 from "../../assets/Slide2_1.jpeg";
 import slide3 from "../../assets/Slide3.jpeg";
 import slide3_1 from "../../assets/Slide3_1.jpeg";
+import slide4 from "../../assets/Slide4.jpeg";
+import slide4_1 from "../../assets/Slide4_1.jpeg";
 
 function HeroSlider() {
 
@@ -29,6 +31,10 @@ function HeroSlider() {
       desktop: slide3,
       mobile: slide3_1,
     },
+    {
+      desktop: slide4,
+      mobile: slide4_1
+    }
   ];
 
   return (
