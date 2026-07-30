@@ -20,6 +20,16 @@ function ProductDetails() {
 
   const whatsappNumber = "918827270701";
   const instagramLink = "https://www.instagram.com/poonams_beauty6r/";
+  const shareMessage = encodeURIComponent(
+    `🌿 Check out this product from Prakriti Veda!
+
+${product.name}
+💰 Price: ${product.price}
+
+${window.location.href}`,
+  );
+
+  const shareLink = `https://wa.me/?text=${shareMessage}`;
 
   const whatsappMessage = encodeURIComponent(
     `Hello Prakruti Veda,
@@ -85,6 +95,14 @@ Please share more details. Thank you!`,
             className="pv-detail-instagram"
           >
             📷 Order on Instagram
+          </a>
+          <a
+            href={shareLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="pv-detail-share"
+          >
+            📤 Share on WhatsApp
           </a>
         </div>
       </div>
