@@ -44,6 +44,13 @@ Please share more details. Thank you!`,
 
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
+  const originalPrice = Number(product.originalPrice.replace(/[₹,]/g, ""));
+  const currentPrice = Number(product.price.replace(/[₹,]/g, ""));
+
+  const discount = Math.round(
+    ((originalPrice - currentPrice) / originalPrice) * 100,
+  );
+
   return (
     <section className="pv-detail">
       <div className="pv-detail-container">
@@ -76,6 +83,8 @@ Please share more details. Thank you!`,
             <span className="pv-detail-original">{product.originalPrice}</span>
 
             <span className="pv-detail-current">{product.price}</span>
+
+            <span className="pv-detail-discount">{discount}% OFF</span>
           </div>
 
           <p className="pv-detail-short">{product.shortDescription}</p>

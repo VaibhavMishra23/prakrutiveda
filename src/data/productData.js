@@ -12,7 +12,7 @@ const productData = [
   {
     id: 1,
 
-    name: "Prakruti Veda Herbal Shampoo",
+    name: "Prakruti Veda Herbal Shampoo (200ml)",
 
     image: product2,
 
@@ -81,7 +81,7 @@ const productData = [
   {
     id: 2,
 
-    name: "Prakruti Veda Kesh Prakruti Hair Oil",
+    name: "Prakruti Veda Kesh Prakruti Hair Oil (100ml)",
 
     image: product3,
 
@@ -161,7 +161,7 @@ const productData = [
   {
     id: 3,
 
-    name: "Prakruti Veda Swarnkanti Kumkumadi Face Oil",
+    name: "Prakruti Veda Swarnkanti Kumkumadi Face Oil (30ml)",
 
     image: product1,
 
@@ -237,7 +237,7 @@ const productData = [
   },{
     id: 4,
 
-    name: "Prakruti Veda Swarnkanti Kumkumadi Face Oil 10ml",
+    name: "Prakruti Veda Swarnkanti Kumkumadi Face Oil (10ml)",
 
     image: product4,
 

@@ -202,6 +202,35 @@
     transform:translateY(-2px);
 }
 
+.pv-detail-price {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.pv-detail-original {
+  color: #888;
+  text-decoration: line-through;
+  font-size: 18px;
+}
+
+.pv-detail-current {
+  color: #1b5e20;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.pv-detail-discount {
+  color: #0f9d58;
+  background: #e8f5e9;
+  border: 1px solid #c8e6c9;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
 @media(max-width:992px){
 
     .pv-detail-container{
